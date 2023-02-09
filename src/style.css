@@ -18,7 +18,7 @@
   --text-color: black;
   --text-size: 20px;
   --font-text: sans-serif;
-  --wheel-time-lapse: 15s;
+  --wheel-time-lapse: 10s;
   --wheel-boder-color: #ccc;
 }
 
@@ -60,11 +60,17 @@ body {
   font-weight: bold;
   font-family: var(--font-text);
   left: 135px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  top: 2px;
+  writing-mode: vertical-lr;
 }
 
 .container .one {
   background-color: var(--1-color);
-  left: 50%;
+  left: 29%;
+  transform: rotate(0deg);
 }
 
 .container .two {
@@ -104,15 +110,16 @@ body {
 
 .arrow {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 42%;
+  left: 65%;
+
+  transform: rotate(90deg);
   color: var(--arrow-color);
 }
 
 .arrow::before {
   content: "\1F817";
-  font-size: 50px;
+  font-size: 100px;
 }
 
 #spin {
