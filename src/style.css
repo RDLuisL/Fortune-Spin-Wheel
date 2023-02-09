@@ -3,15 +3,15 @@
 }
 
 :root {
-  --background-color: #34495e;
+  --background-color: #af8eab;
   --container-color: white;
   --1-color: #3f51b5;
-  --2-color: #ff9800;
+  --2-color: #b092b8;
   --3-color: #e91e63;
-  --4-color: #4caf50;
-  --5-color: #009688;
-  --6-color: #795548;
-  --7-color: #9c27b0;
+  --4-color: #5f1c63;
+  --5-color: hwb(174 7% 38%);
+  --6-color: #ab8aa7;
+  --7-color: #401e7c;
   --8-color: #f44336;
   --arrow-color: red;
   --spin-color: #a2a2a2;
@@ -132,7 +132,7 @@ body {
   text-transform: uppercase;
   border: 8px solid var(--wheel-boder-color);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   color: var(--text-color);
   width: 80px;
   height: 80px;

@@ -8,5 +8,5 @@ let number = Math.ceil(Math.random() * 100000);
 
 btn.onclick = function() {
   container.style.transform = "rotate(" + number + "deg)";
-  number += Math.ceil(Math.random() * 100000);
+  number += Math.ceil(Math.random() * 10000);
 };
