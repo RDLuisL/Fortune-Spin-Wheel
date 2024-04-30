@@ -2,10 +2,11 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+let container = document.querySelector(".container");
+let btn = document.getElementById("spin");
+let number = Math.ceil(Math.random() * 100000);
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+btn.onclick = function() {
+  container.style.transform = "rotate(" + number + "deg)";
+  number += Math.ceil(Math.random() * 10000);
 };

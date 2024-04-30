@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Rueda de la Fortuna by Luis Luna</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +13,31 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <button id="spin">Girar</button>
+    <audio id="myAudio">
+      <source src="../src/rulet_audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script>
+      var audio = document.getElementById("myAudio");
+      var spin = document.getElementById("spin");
+
+      spin.addEventListener("click", function() {
+        audio.play();
+      });
+    </script>
+
+    <span class="arrow"></span>
+    <div class="container">
+      <div class="one">oıɯǝɹd uıs</div>
+      <div class="two">sıʇɐɹƃ ɐʇןnsuoɔ</div>
+      <div class="three">oɔod ɹod</div>
+      <div class="four">%02</div>
+      <div class="five">oʌǝnu ǝp ǝʇuǝʇuı</div>
+      <div class="six">%51</div>
+      <div class="seven">oʌǝnu ǝp ǝʇuǝʇuı</div>
+      <div class="eight">%01-</div>
     </div>
   </body>
 </html>
